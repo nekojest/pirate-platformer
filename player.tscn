@@ -1,28 +1,28 @@
 [gd_scene load_steps=8 format=3 uid="uid://dbh78c7x54fhv"]
 
-[ext_resource type="Texture2D" uid="uid://ehdthim8ah4s" path="res://assets/Captain Clown Nose/Sprites/Captain Clown Nose/Captain Clown Nose without Sword/01-Idle/Captain Clown Nose1.png" id="1_viot8"]
-[ext_resource type="Texture2D" uid="uid://b1fgho34gmdxx" path="res://assets/Captain Clown Nose/Sprites/Captain Clown Nose/Captain Clown Nose without Sword/01-Idle/Captain Clown Nose2.png" id="2_acuuf"]
-[ext_resource type="Texture2D" uid="uid://ck5n38ixbojj2" path="res://assets/Captain Clown Nose/Sprites/Captain Clown Nose/Captain Clown Nose without Sword/01-Idle/Captain Clown Nose3.png" id="3_5mhwo"]
-[ext_resource type="Texture2D" uid="uid://bv2s5dhsu6msp" path="res://assets/Captain Clown Nose/Sprites/Captain Clown Nose/Captain Clown Nose without Sword/01-Idle/Captain Clown Nose4.png" id="4_rl6or"]
-[ext_resource type="Texture2D" uid="uid://7avpua61gre0" path="res://assets/Captain Clown Nose/Sprites/Captain Clown Nose/Captain Clown Nose without Sword/01-Idle/Captain Clown Nose5.png" id="5_yv0fy"]
+[ext_resource type="Texture2D" uid="uid://bpbdfhuq5ayiu" path="res://assets/Captain Clown Nose/Aseprite/Captain Clown Nose1.png" id="1_g1qpl"]
+[ext_resource type="Texture2D" uid="uid://buuuubwgxdwof" path="res://assets/Captain Clown Nose/Aseprite/Captain Clown Nose2.png" id="2_k7q1l"]
+[ext_resource type="Texture2D" uid="uid://cyqe8p4ivk5uh" path="res://assets/Captain Clown Nose/Aseprite/Captain Clown Nose3.png" id="3_0j48q"]
+[ext_resource type="Texture2D" uid="uid://cp74msi2qtss" path="res://assets/Captain Clown Nose/Aseprite/Captain Clown Nose4.png" id="4_preji"]
+[ext_resource type="Texture2D" uid="uid://c4xb6tdvf2irk" path="res://assets/Captain Clown Nose/Aseprite/Captain Clown Nose5.png" id="5_axixc"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_k2xx8"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("1_viot8")
+"texture": ExtResource("1_g1qpl")
 }, {
 "duration": 1.0,
-"texture": ExtResource("2_acuuf")
+"texture": ExtResource("2_k7q1l")
 }, {
 "duration": 1.0,
-"texture": ExtResource("3_5mhwo")
+"texture": ExtResource("3_0j48q")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_rl6or")
+"texture": ExtResource("4_preji")
 }, {
 "duration": 1.0,
-"texture": ExtResource("5_yv0fy")
+"texture": ExtResource("5_axixc")
 }],
 "loop": false,
 "name": &"default",
@@ -30,7 +30,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_uxqv5"]
-size = Vector2(15.5405, 18.7259)
+size = Vector2(15.5405, 17.9537)
 
 [node name="PlayerBody" type="CharacterBody2D"]
 position = Vector2(3, 0)
@@ -38,7 +38,7 @@ scale = Vector2(10.36, 10.36)
 metadata/_edit_group_ = true
 
 [node name="CaptainAnimatedSprite" type="AnimatedSprite2D" parent="."]
-position = Vector2(5.69498, 0)
+position = Vector2(-0.675675, 1.1583)
 scale = Vector2(0.127413, 0.127413)
 sprite_frames = SubResource("SpriteFrames_k2xx8")
 frame = 4
