@@ -24,7 +24,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("5_yv0fy")
 }],
-"loop": true,
+"loop": false,
 "name": &"default",
 "speed": 5.0
 }]
@@ -41,6 +41,8 @@ metadata/_edit_group_ = true
 position = Vector2(5.69498, 0)
 scale = Vector2(0.127413, 0.127413)
 sprite_frames = SubResource("SpriteFrames_k2xx8")
+frame = 4
+frame_progress = 1.0
 
 [node name="CaptainCollision" type="CollisionShape2D" parent="."]
 position = Vector2(-0.723938, 1.1583)
