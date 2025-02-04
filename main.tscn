@@ -4741,7 +4741,6 @@ sources/0 = SubResource("TileSetAtlasSource_bw2g1")
 
 [node name="PlayerBody" parent="." instance=ExtResource("1_3i0op")]
 position = Vector2(69, 429)
-scale = Vector2(7.08, 7.08)
 script = ExtResource("2_ocf16")
 
 [node name="TerrainMapLayer" type="TileMapLayer" parent="."]
@@ -4750,7 +4749,7 @@ tile_map_data = PackedByteArray("AAAAACkAAAApADEAAABNACkAAAAwADEAAABOACkAAAAxADE
 tile_set = SubResource("TileSet_kjn85")
 use_kinematic_bodies = true
 
-[node name="TextureRect" type="TextureRect" parent="."]
+[node name="Background" type="TextureRect" parent="."]
 show_behind_parent = true
 offset_right = 1929.0
 offset_bottom = 643.0

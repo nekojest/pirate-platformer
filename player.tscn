@@ -30,20 +30,18 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_uxqv5"]
-size = Vector2(15.5405, 17.9537)
+size = Vector2(121, 141)
 
 [node name="PlayerBody" type="CharacterBody2D"]
 position = Vector2(3, 0)
-scale = Vector2(10.36, 10.36)
 metadata/_edit_group_ = true
 
 [node name="CaptainAnimatedSprite" type="AnimatedSprite2D" parent="."]
 position = Vector2(-0.675675, 1.1583)
-scale = Vector2(0.127413, 0.127413)
 sprite_frames = SubResource("SpriteFrames_k2xx8")
 frame = 4
 frame_progress = 1.0
 
 [node name="CaptainCollision" type="CollisionShape2D" parent="."]
-position = Vector2(-0.723938, 1.1583)
+position = Vector2(-0.5, 1.5)
 shape = SubResource("RectangleShape2D_uxqv5")

@@ -1,0 +1,57 @@
+[gd_scene load_steps=11 format=3 uid="uid://cwx8rr6olqt4y"]
+
+[ext_resource type="Texture2D" uid="uid://vegnwkhdmj0" path="res://assets/The Crusty Crew/Aseprite/Fierce Tooth1.png" id="1_44nly"]
+[ext_resource type="Texture2D" uid="uid://dc01a5qy778mu" path="res://assets/The Crusty Crew/Aseprite/Fierce Tooth2.png" id="2_kbqjt"]
+[ext_resource type="Texture2D" uid="uid://cg3e7yxw3v00q" path="res://assets/The Crusty Crew/Aseprite/Fierce Tooth3.png" id="3_l5e7m"]
+[ext_resource type="Texture2D" uid="uid://bk27esvty1rrp" path="res://assets/The Crusty Crew/Aseprite/Fierce Tooth4.png" id="4_xjykq"]
+[ext_resource type="Texture2D" uid="uid://bt4pt60cmpjhe" path="res://assets/The Crusty Crew/Aseprite/Fierce Tooth5.png" id="5_8udc5"]
+[ext_resource type="Texture2D" uid="uid://c3wkfrnj2pusi" path="res://assets/The Crusty Crew/Aseprite/Fierce Tooth6.png" id="6_5wk20"]
+[ext_resource type="Texture2D" uid="uid://x8gegjnru8wd" path="res://assets/The Crusty Crew/Aseprite/Fierce Tooth7.png" id="7_1tbso"]
+[ext_resource type="Texture2D" uid="uid://bflh8ylhphvl5" path="res://assets/The Crusty Crew/Aseprite/Fierce Tooth8.png" id="8_76rj5"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_0hyhr"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_44nly")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_kbqjt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_l5e7m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_xjykq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_8udc5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_5wk20")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_1tbso")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_76rj5")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kr25a"]
+size = Vector2(115, 119)
+
+[node name="FierceArea2D" type="Area2D"]
+metadata/_edit_group_ = true
+
+[node name="FierceAnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_0hyhr")
+animation = &"idle"
+speed_scale = 1.5
+
+[node name="FierceCollision" type="CollisionShape2D" parent="."]
+position = Vector2(2.5, -2.5)
+shape = SubResource("RectangleShape2D_kr25a")
