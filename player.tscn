@@ -39,10 +39,10 @@ animations = [{
 "texture": ExtResource("7_rkhro")
 }, {
 "duration": 1.0,
-"texture": ExtResource("8_f5r71")
+"texture": ExtResource("6_vakt6")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_vakt6")
+"texture": ExtResource("8_f5r71")
 }, {
 "duration": 1.0,
 "texture": ExtResource("9_hihju")
@@ -55,7 +55,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"run",
-"speed": 5.0
+"speed": 7.0
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_uxqv5"]
@@ -72,7 +72,6 @@ metadata/_edit_group_ = true
 position = Vector2(-0.675675, 1.1583)
 sprite_frames = SubResource("SpriteFrames_k2xx8")
 animation = &"run"
-frame_progress = 0.535523
 
 [node name="CaptainCollisionIdle" type="CollisionShape2D" parent="."]
 position = Vector2(-0.5, 0.499998)

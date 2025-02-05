@@ -44,10 +44,10 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_kr25a"]
 size = Vector2(115, 119)
 
-[node name="FierceArea2D" type="Area2D"]
+[node name="FierceTooth" type="Area2D"]
 metadata/_edit_group_ = true
 
-[node name="FierceAnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+[node name="FierceAnimatedSprite" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_0hyhr")
 animation = &"idle"
 speed_scale = 1.5
