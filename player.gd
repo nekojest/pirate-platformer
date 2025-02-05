@@ -22,6 +22,7 @@ func _physics_process(delta: float) -> void:
 		$CaptainCollisionRun.disabled = false
 		$CaptainCollisionIdle.disabled = true
 		velocity.x = direction * SPEED
+		
 		if velocity.x < 0:
 			$CaptainAnimatedSprite.flip_h = true
 		else:
