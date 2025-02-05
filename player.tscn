@@ -55,7 +55,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_uxqv5"]
-size = Vector2(121, 141)
+size = Vector2(120, 141)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_o3pye"]
 size = Vector2(120, 170)
@@ -67,11 +67,11 @@ metadata/_edit_group_ = true
 [node name="CaptainAnimatedSprite" type="AnimatedSprite2D" parent="."]
 position = Vector2(-0.675675, 1.1583)
 sprite_frames = SubResource("SpriteFrames_k2xx8")
-animation = &"run"
+animation = &"idle"
 
 [node name="CaptainCollisionIdle" type="CollisionShape2D" parent="."]
 visible = false
-position = Vector2(-0.5, 0.499998)
+position = Vector2(-1, 0.499998)
 shape = SubResource("RectangleShape2D_uxqv5")
 
 [node name="CaptainCollisionRun" type="CollisionShape2D" parent="."]
