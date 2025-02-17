@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://8g516knnkkuv"]
+[gd_scene load_steps=10 format=3 uid="uid://8g516knnkkuv"]
 
 [ext_resource type="Texture2D" uid="uid://dbt8rba6dmdxs" path="res://assets/The Crusty Crew/Aseprite/Exclamation1.png" id="1_wem8t"]
 [ext_resource type="Texture2D" uid="uid://dn4y6qsj5rvlv" path="res://assets/The Crusty Crew/Aseprite/Exclamation2.png" id="2_e3cin"]
@@ -7,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://c03i6gi300ux1" path="res://assets/The Crusty Crew/Aseprite/Exclamation5.png" id="5_cx58g"]
 [ext_resource type="Texture2D" uid="uid://vtisphstt6hp" path="res://assets/The Crusty Crew/Aseprite/Exclamation6.png" id="6_6jple"]
 [ext_resource type="Texture2D" uid="uid://ci1nbow6hnbnd" path="res://assets/The Crusty Crew/Aseprite/Exclamation7.png" id="7_dro1p"]
+[ext_resource type="Script" path="res://scenes/exclamation_sprite.gd" id="8_7i53d"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_52nks"]
 animations = [{
@@ -37,7 +38,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("7_dro1p")
 }],
-"loop": true,
+"loop": false,
 "name": &"out",
 "speed": 5.0
 }]
@@ -49,3 +50,6 @@ sprite_frames = SubResource("SpriteFrames_52nks")
 animation = &"in"
 autoplay = "in"
 flip_h = true
+script = ExtResource("8_7i53d")
+
+[connection signal="animation_finished" from="AnimatedSprite2D" to="AnimatedSprite2D" method="_on_animation_finished"]

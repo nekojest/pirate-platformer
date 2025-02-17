@@ -6,7 +6,6 @@
 [ext_resource type="Script" path="res://scripts/player.gd" id="2_ocf16"]
 [ext_resource type="Texture2D" uid="uid://b7x20jybbe540" path="res://assets/Palm Tree Island/Sprites/Terrain/TerrainTileSet.png" id="3_lg88p"]
 [ext_resource type="Texture2D" uid="uid://bekvp4in1ypiq" path="res://assets/Palm Tree Island/Sprites/Background/background.png" id="6_652br"]
-[ext_resource type="PackedScene" uid="uid://b803rsawembfb" path="res://scenes/maps/small_map_top_left.tscn" id="7_8t3es"]
 [ext_resource type="PackedScene" uid="uid://8g516knnkkuv" path="res://scenes/exclamation.tscn" id="8_mti8e"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_bw2g1"]
@@ -14622,6 +14621,20 @@ texture = ExtResource("6_652br")
 [sub_resource type="TileSet" id="TileSet_o21ft"]
 sources/0 = SubResource("TileSetAtlasSource_spxom")
 
+[sub_resource type="GDScript" id="GDScript_trol8"]
+script/source = "extends Node2D
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready() -> void:
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta: float) -> void:
+	pass
+"
+
 [node name="MainScene" type="Node2D"]
 
 [node name="FierceTooth" parent="." instance=ExtResource("1_pkupn")]
@@ -14645,8 +14658,6 @@ tile_map_data = PackedByteArray("AAAAABwAAAAAAAAAAAAAAB0AAAAAAAEAAAAAAB4AAAAAAAI
 tile_set = SubResource("TileSet_o21ft")
 metadata/_edit_lock_ = true
 
-[node name="SmallMapTopLeft" parent="." instance=ExtResource("7_8t3es")]
-position = Vector2(1327, 976)
-
 [node name="Exclamation" parent="." instance=ExtResource("8_mti8e")]
 position = Vector2(1347, 887)
+script = SubResource("GDScript_trol8")
