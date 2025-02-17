@@ -4,7 +4,7 @@ signal start_timer
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	pass # Replace with function body.
+	self.play()
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -13,7 +13,7 @@ func _process(_delta: float) -> void:
 
 
 func _on_animation_finished() -> void:
-	emit_signal("start_timer")
+	start_timer.emit()
 	
 
 func _on_timer_timeout() -> void:

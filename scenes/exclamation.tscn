@@ -49,7 +49,6 @@ animations = [{
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_52nks")
 animation = &"in"
-autoplay = "in"
 flip_h = true
 script = ExtResource("8_7i53d")
 
