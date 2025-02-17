@@ -1,40 +1,40 @@
 [gd_scene load_steps=11 format=3 uid="uid://b803rsawembfb"]
 
-[ext_resource type="Texture2D" uid="uid://dgpjpgyjt13vt" path="res://assets/Pirate Treasure/Aseprite/Pirate Treasure-1.png" id="1_kh7hr"]
-[ext_resource type="Texture2D" uid="uid://blty1bdlxpgjm" path="res://assets/Pirate Treasure/Aseprite/Pirate Treasure-2.png" id="2_dt3js"]
-[ext_resource type="Texture2D" uid="uid://rcec05e683jo" path="res://assets/Pirate Treasure/Aseprite/Pirate Treasure-3.png" id="3_8ls4j"]
-[ext_resource type="Texture2D" uid="uid://btwa3oex6lkr7" path="res://assets/Pirate Treasure/Aseprite/Pirate Treasure-4.png" id="4_1cl6l"]
-[ext_resource type="Texture2D" uid="uid://dtutbc4bcy8p5" path="res://assets/Pirate Treasure/Aseprite/Pirate Treasure-5.png" id="5_2hagd"]
-[ext_resource type="Texture2D" uid="uid://c8cw8aaat4r1u" path="res://assets/Pirate Treasure/Aseprite/Pirate Treasure-6.png" id="6_b1xbb"]
-[ext_resource type="Texture2D" uid="uid://brthy1jq3h0gn" path="res://assets/Pirate Treasure/Aseprite/Pirate Treasure-7.png" id="7_nkwce"]
-[ext_resource type="Texture2D" uid="uid://dlic64orm3im2" path="res://assets/Pirate Treasure/Aseprite/Pirate Treasure-8.png" id="8_wlulx"]
+[ext_resource type="Texture2D" uid="uid://dgpjpgyjt13vt" path="res://assets/Pirate Treasure/Aseprite/Pirate Treasure-1.png" id="1_o3wtv"]
+[ext_resource type="Texture2D" uid="uid://blty1bdlxpgjm" path="res://assets/Pirate Treasure/Aseprite/Pirate Treasure-2.png" id="2_381de"]
+[ext_resource type="Texture2D" uid="uid://rcec05e683jo" path="res://assets/Pirate Treasure/Aseprite/Pirate Treasure-3.png" id="3_0l62u"]
+[ext_resource type="Texture2D" uid="uid://btwa3oex6lkr7" path="res://assets/Pirate Treasure/Aseprite/Pirate Treasure-4.png" id="4_7xx6x"]
+[ext_resource type="Texture2D" uid="uid://dtutbc4bcy8p5" path="res://assets/Pirate Treasure/Aseprite/Pirate Treasure-5.png" id="5_5sqlk"]
+[ext_resource type="Texture2D" uid="uid://c8cw8aaat4r1u" path="res://assets/Pirate Treasure/Aseprite/Pirate Treasure-6.png" id="6_h67x3"]
+[ext_resource type="Texture2D" uid="uid://brthy1jq3h0gn" path="res://assets/Pirate Treasure/Aseprite/Pirate Treasure-7.png" id="7_wdhb8"]
+[ext_resource type="Texture2D" uid="uid://dlic64orm3im2" path="res://assets/Pirate Treasure/Aseprite/Pirate Treasure-8.png" id="8_iindk"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_hck65"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("1_kh7hr")
+"texture": ExtResource("1_o3wtv")
 }, {
 "duration": 1.0,
-"texture": ExtResource("2_dt3js")
+"texture": ExtResource("2_381de")
 }, {
 "duration": 1.0,
-"texture": ExtResource("3_8ls4j")
+"texture": ExtResource("3_0l62u")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_1cl6l")
+"texture": ExtResource("4_7xx6x")
 }, {
 "duration": 1.0,
-"texture": ExtResource("5_2hagd")
+"texture": ExtResource("5_5sqlk")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_b1xbb")
+"texture": ExtResource("6_h67x3")
 }, {
 "duration": 1.0,
-"texture": ExtResource("7_nkwce")
+"texture": ExtResource("7_wdhb8")
 }, {
 "duration": 1.0,
-"texture": ExtResource("8_wlulx")
+"texture": ExtResource("8_iindk")
 }],
 "loop": true,
 "name": &"default",
@@ -49,7 +49,7 @@ size = Vector2(75, 82)
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_hck65")
 autoplay = "default"
-frame_progress = 0.625932
+frame_progress = 0.494032
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-2.5, -5)

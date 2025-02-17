@@ -49,7 +49,7 @@ size = Vector2(75, 81)
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_mc76i")
 autoplay = "default"
-frame_progress = 0.587379
+frame_progress = 0.0779237
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-2.5, -4.5)

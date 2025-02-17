@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=4 uid="uid://cuo583gswje06"]
+[gd_scene load_steps=14 format=4 uid="uid://cuo583gswje06"]
 
 [ext_resource type="PackedScene" uid="uid://dbh78c7x54fhv" path="res://scenes/player.tscn" id="1_3i0op"]
 [ext_resource type="PackedScene" uid="uid://c7tvhtpckud1i" path="res://scenes/fierce_tooth.tscn" id="1_pkupn"]
@@ -6,7 +6,8 @@
 [ext_resource type="Script" path="res://scripts/player.gd" id="2_ocf16"]
 [ext_resource type="Texture2D" uid="uid://b7x20jybbe540" path="res://assets/Palm Tree Island/Sprites/Terrain/TerrainTileSet.png" id="3_lg88p"]
 [ext_resource type="Texture2D" uid="uid://bekvp4in1ypiq" path="res://assets/Palm Tree Island/Sprites/Background/background.png" id="6_652br"]
-[ext_resource type="PackedScene" uid="uid://ci738ux544357" path="res://scenes/map/map_collectible.tscn" id="7_3dfpm"]
+[ext_resource type="PackedScene" uid="uid://b803rsawembfb" path="res://scenes/maps/small_map_top_left.tscn" id="7_8t3es"]
+[ext_resource type="PackedScene" uid="uid://8g516knnkkuv" path="res://scenes/exclamation.tscn" id="8_mti8e"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_bw2g1"]
 texture = ExtResource("3_lg88p")
@@ -14644,5 +14645,8 @@ tile_map_data = PackedByteArray("AAAAABwAAAAAAAAAAAAAAB0AAAAAAAEAAAAAAB4AAAAAAAI
 tile_set = SubResource("TileSet_o21ft")
 metadata/_edit_lock_ = true
 
-[node name="MapCollectible" parent="." instance=ExtResource("7_3dfpm")]
-position = Vector2(638, 923)
+[node name="SmallMapTopLeft" parent="." instance=ExtResource("7_8t3es")]
+position = Vector2(1327, 976)
+
+[node name="Exclamation" parent="." instance=ExtResource("8_mti8e")]
+position = Vector2(1347, 887)

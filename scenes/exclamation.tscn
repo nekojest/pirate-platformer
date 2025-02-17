@@ -1,0 +1,51 @@
+[gd_scene load_steps=9 format=3 uid="uid://8g516knnkkuv"]
+
+[ext_resource type="Texture2D" uid="uid://dbt8rba6dmdxs" path="res://assets/The Crusty Crew/Aseprite/Exclamation1.png" id="1_wem8t"]
+[ext_resource type="Texture2D" uid="uid://dn4y6qsj5rvlv" path="res://assets/The Crusty Crew/Aseprite/Exclamation2.png" id="2_e3cin"]
+[ext_resource type="Texture2D" uid="uid://mv87q660l1h6" path="res://assets/The Crusty Crew/Aseprite/Exclamation3.png" id="3_fg867"]
+[ext_resource type="Texture2D" uid="uid://cv6lb3hi14yu3" path="res://assets/The Crusty Crew/Aseprite/Exclamation4.png" id="4_p4s6p"]
+[ext_resource type="Texture2D" uid="uid://c03i6gi300ux1" path="res://assets/The Crusty Crew/Aseprite/Exclamation5.png" id="5_cx58g"]
+[ext_resource type="Texture2D" uid="uid://vtisphstt6hp" path="res://assets/The Crusty Crew/Aseprite/Exclamation6.png" id="6_6jple"]
+[ext_resource type="Texture2D" uid="uid://ci1nbow6hnbnd" path="res://assets/The Crusty Crew/Aseprite/Exclamation7.png" id="7_dro1p"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_52nks"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_wem8t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_e3cin")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_fg867")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_p4s6p")
+}],
+"loop": false,
+"name": &"in",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_cx58g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_6jple")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_dro1p")
+}],
+"loop": true,
+"name": &"out",
+"speed": 5.0
+}]
+
+[node name="Exclamation" type="Node2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_52nks")
+animation = &"in"
+autoplay = "in"
+flip_h = true
