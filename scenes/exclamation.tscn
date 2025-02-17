@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://8g516knnkkuv"]
+[gd_scene load_steps=11 format=3 uid="uid://8g516knnkkuv"]
 
 [ext_resource type="Texture2D" uid="uid://dbt8rba6dmdxs" path="res://assets/The Crusty Crew/Aseprite/Exclamation1.png" id="1_wem8t"]
 [ext_resource type="Texture2D" uid="uid://dn4y6qsj5rvlv" path="res://assets/The Crusty Crew/Aseprite/Exclamation2.png" id="2_e3cin"]
@@ -8,6 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://vtisphstt6hp" path="res://assets/The Crusty Crew/Aseprite/Exclamation6.png" id="6_6jple"]
 [ext_resource type="Texture2D" uid="uid://ci1nbow6hnbnd" path="res://assets/The Crusty Crew/Aseprite/Exclamation7.png" id="7_dro1p"]
 [ext_resource type="Script" path="res://scenes/exclamation_sprite.gd" id="8_7i53d"]
+[ext_resource type="Script" path="res://scenes/timer.gd" id="9_lfvqb"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_52nks"]
 animations = [{
@@ -52,4 +53,9 @@ autoplay = "in"
 flip_h = true
 script = ExtResource("8_7i53d")
 
+[node name="Timer" type="Timer" parent="."]
+script = ExtResource("9_lfvqb")
+
 [connection signal="animation_finished" from="AnimatedSprite2D" to="AnimatedSprite2D" method="_on_animation_finished"]
+[connection signal="start_timer" from="AnimatedSprite2D" to="Timer" method="_on_animated_sprite_2d_start_timer"]
+[connection signal="timeout" from="Timer" to="AnimatedSprite2D" method="_on_timer_timeout"]
