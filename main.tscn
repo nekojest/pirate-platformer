@@ -1,9 +1,9 @@
 [gd_scene load_steps=12 format=4 uid="uid://cuo583gswje06"]
 
-[ext_resource type="PackedScene" uid="uid://dbh78c7x54fhv" path="res://player.tscn" id="1_3i0op"]
-[ext_resource type="PackedScene" uid="uid://cwx8rr6olqt4y" path="res://fierce_tooth.tscn" id="1_pkupn"]
-[ext_resource type="Script" path="res://fierce_tooth.gd" id="2_ia8yr"]
-[ext_resource type="Script" path="res://player.gd" id="2_ocf16"]
+[ext_resource type="PackedScene" uid="uid://dbh78c7x54fhv" path="res://scenes/player.tscn" id="1_3i0op"]
+[ext_resource type="PackedScene" uid="uid://cwx8rr6olqt4y" path="res://scenes/fierce_tooth.tscn" id="1_pkupn"]
+[ext_resource type="Script" path="res://scripts/fierce_tooth.gd" id="2_ia8yr"]
+[ext_resource type="Script" path="res://scripts/player.gd" id="2_ocf16"]
 [ext_resource type="Texture2D" uid="uid://b7x20jybbe540" path="res://assets/Palm Tree Island/Sprites/Terrain/TerrainTileSet.png" id="3_lg88p"]
 [ext_resource type="Texture2D" uid="uid://bekvp4in1ypiq" path="res://assets/Palm Tree Island/Sprites/Background/background.png" id="6_652br"]
 
@@ -14627,7 +14627,7 @@ position = Vector2(1424, 963)
 script = ExtResource("2_ia8yr")
 
 [node name="PlayerBody" parent="." instance=ExtResource("1_3i0op")]
-position = Vector2(1264, 945)
+position = Vector2(265, 945)
 script = ExtResource("2_ocf16")
 
 [node name="TerrainMapLayer" type="TileMapLayer" parent="."]

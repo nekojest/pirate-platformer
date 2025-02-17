@@ -70,10 +70,10 @@ sprite_frames = SubResource("SpriteFrames_k2xx8")
 animation = &"idle"
 
 [node name="CaptainCollisionIdle" type="CollisionShape2D" parent="."]
-visible = false
 position = Vector2(-1, 0.499998)
 shape = SubResource("RectangleShape2D_uxqv5")
 
 [node name="CaptainCollisionRun" type="CollisionShape2D" parent="."]
+visible = false
 position = Vector2(-1, 1)
 shape = SubResource("RectangleShape2D_o3pye")
