@@ -1,0 +1,56 @@
+[gd_scene load_steps=11 format=3 uid="uid://ccuy7rs4vpudu"]
+
+[ext_resource type="Texture2D" uid="uid://bc8aj0eoqoly5" path="res://assets/Pirate Treasure/Aseprite/Pirate Treasure-map-bot-left1.png" id="1_0p8a0"]
+[ext_resource type="Texture2D" uid="uid://dcehlwiubmqke" path="res://assets/Pirate Treasure/Aseprite/Pirate Treasure-map-bot-left2.png" id="2_mumjr"]
+[ext_resource type="Texture2D" uid="uid://d4mtikln4k43k" path="res://assets/Pirate Treasure/Aseprite/Pirate Treasure-map-bot-left3.png" id="3_6ycvr"]
+[ext_resource type="Texture2D" uid="uid://bvjv765l4y3wp" path="res://assets/Pirate Treasure/Aseprite/Pirate Treasure-map-bot-left4.png" id="4_n0gnv"]
+[ext_resource type="Texture2D" uid="uid://dhb4eet58i7do" path="res://assets/Pirate Treasure/Aseprite/Pirate Treasure-map-bot-left5.png" id="5_uhb2v"]
+[ext_resource type="Texture2D" uid="uid://hujvldiko55u" path="res://assets/Pirate Treasure/Aseprite/Pirate Treasure-map-bot-left6.png" id="6_amley"]
+[ext_resource type="Texture2D" uid="uid://tm7ltpffmoim" path="res://assets/Pirate Treasure/Aseprite/Pirate Treasure-map-bot-left7.png" id="7_hipa0"]
+[ext_resource type="Texture2D" uid="uid://bwb1eiby8yrsl" path="res://assets/Pirate Treasure/Aseprite/Pirate Treasure-map-bot-left8.png" id="8_qffpv"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_mc76i"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_0p8a0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_mumjr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_6ycvr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_n0gnv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_uhb2v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_amley")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_hipa0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_qffpv")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_n8vis"]
+size = Vector2(75, 81)
+
+[node name="SmallMapBottomLeft" type="Area2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_mc76i")
+autoplay = "default"
+frame_progress = 0.587379
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-2.5, -4.5)
+shape = SubResource("RectangleShape2D_n8vis")
