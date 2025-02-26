@@ -14661,3 +14661,4 @@ metadata/_edit_lock_ = true
 [node name="Exclamation" parent="." instance=ExtResource("8_mti8e")]
 position = Vector2(1347, 887)
 script = SubResource("GDScript_trol8")
+metadata/_edit_lock_ = true
