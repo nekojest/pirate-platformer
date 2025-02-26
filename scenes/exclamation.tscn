@@ -7,8 +7,8 @@
 [ext_resource type="Texture2D" uid="uid://c03i6gi300ux1" path="res://assets/The Crusty Crew/Aseprite/Exclamation5.png" id="5_cx58g"]
 [ext_resource type="Texture2D" uid="uid://vtisphstt6hp" path="res://assets/The Crusty Crew/Aseprite/Exclamation6.png" id="6_6jple"]
 [ext_resource type="Texture2D" uid="uid://ci1nbow6hnbnd" path="res://assets/The Crusty Crew/Aseprite/Exclamation7.png" id="7_dro1p"]
-[ext_resource type="Script" path="res://scenes/exclamation_sprite.gd" id="8_7i53d"]
-[ext_resource type="Script" path="res://scenes/timer.gd" id="9_lfvqb"]
+[ext_resource type="Script" path="res://scripts/exclamation_sprite.gd" id="8_7i53d"]
+[ext_resource type="Script" path="res://scripts/timer.gd" id="9_lfvqb"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_52nks"]
 animations = [{
