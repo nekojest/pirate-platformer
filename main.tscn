@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=4 uid="uid://cuo583gswje06"]
+[gd_scene load_steps=18 format=4 uid="uid://cuo583gswje06"]
 
 [ext_resource type="PackedScene" uid="uid://dbh78c7x54fhv" path="res://scenes/player.tscn" id="1_3i0op"]
 [ext_resource type="PackedScene" uid="uid://c7tvhtpckud1i" path="res://scenes/fierce_tooth.tscn" id="1_pkupn"]
@@ -9,6 +9,8 @@
 [ext_resource type="PackedScene" uid="uid://8g516knnkkuv" path="res://scenes/exclamation.tscn" id="8_mti8e"]
 [ext_resource type="PackedScene" uid="uid://2kwp5t0qhsmj" path="res://scenes/control/opening_text.tscn" id="8_ub53i"]
 [ext_resource type="PackedScene" uid="uid://c36bwdbxddg8t" path="res://scenes/talk_area.tscn" id="9_dy8m4"]
+[ext_resource type="Script" path="res://scripts/opening_text.gd" id="9_ueql5"]
+[ext_resource type="Script" path="res://scripts/talk_area.gd" id="10_lsvcp"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_bw2g1"]
 texture = ExtResource("3_lg88p")
@@ -14635,6 +14637,10 @@ func _ready() -> void:
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta: float) -> void:
 	pass
+
+
+func _on_talk_area_start_introduction() -> void:
+	self.queue_free()
 "
 
 [node name="MainScene" type="Node2D"]
@@ -14644,7 +14650,7 @@ position = Vector2(1424, 963)
 script = ExtResource("2_ia8yr")
 
 [node name="PlayerBody" parent="." instance=ExtResource("1_3i0op")]
-position = Vector2(265, 945)
+position = Vector2(1180, 937)
 script = ExtResource("2_ocf16")
 
 [node name="TerrainMapLayer" type="TileMapLayer" parent="."]
@@ -14676,7 +14682,13 @@ offset_bottom = 330.0
 grow_horizontal = 1
 grow_vertical = 1
 scale = Vector2(1.64, 1.64)
+script = ExtResource("9_ueql5")
 metadata/_edit_use_anchors_ = true
 
 [node name="TalkArea" parent="." instance=ExtResource("9_dy8m4")]
 position = Vector2(1309, 957)
+script = ExtResource("10_lsvcp")
+
+[connection signal="body_entered" from="TalkArea" to="TalkArea" method="_on_body_entered"]
+[connection signal="start_introduction" from="TalkArea" to="Exclamation" method="_on_talk_area_start_introduction"]
+[connection signal="start_introduction" from="TalkArea" to="OpeningText" method="_on_talk_area_start_introduction"]
